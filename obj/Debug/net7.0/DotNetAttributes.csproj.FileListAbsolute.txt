@@ -1,0 +1,15 @@
+C:\Users\Edson\DotNetAttributes\bin\Debug\net7.0\DotNetAttributes.exe
+C:\Users\Edson\DotNetAttributes\bin\Debug\net7.0\DotNetAttributes.deps.json
+C:\Users\Edson\DotNetAttributes\bin\Debug\net7.0\DotNetAttributes.runtimeconfig.json
+C:\Users\Edson\DotNetAttributes\bin\Debug\net7.0\DotNetAttributes.dll
+C:\Users\Edson\DotNetAttributes\bin\Debug\net7.0\DotNetAttributes.pdb
+C:\Users\Edson\DotNetAttributes\obj\Debug\net7.0\DotNetAttributes.csproj.AssemblyReference.cache
+C:\Users\Edson\DotNetAttributes\obj\Debug\net7.0\DotNetAttributes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Edson\DotNetAttributes\obj\Debug\net7.0\DotNetAttributes.AssemblyInfoInputs.cache
+C:\Users\Edson\DotNetAttributes\obj\Debug\net7.0\DotNetAttributes.AssemblyInfo.cs
+C:\Users\Edson\DotNetAttributes\obj\Debug\net7.0\DotNetAttributes.csproj.CoreCompileInputs.cache
+C:\Users\Edson\DotNetAttributes\obj\Debug\net7.0\DotNetAttributes.dll
+C:\Users\Edson\DotNetAttributes\obj\Debug\net7.0\refint\DotNetAttributes.dll
+C:\Users\Edson\DotNetAttributes\obj\Debug\net7.0\DotNetAttributes.pdb
+C:\Users\Edson\DotNetAttributes\obj\Debug\net7.0\DotNetAttributes.genruntimeconfig.cache
+C:\Users\Edson\DotNetAttributes\obj\Debug\net7.0\ref\DotNetAttributes.dll
