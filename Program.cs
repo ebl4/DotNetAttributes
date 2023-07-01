@@ -1,9 +1,35 @@
-﻿[Developer("Edson Lima", "31")]
+﻿using System.Reflection;
+
+[Developer("Edson Lima", "31")]
 class Program
 {
     public static void Main(string[] args)
     {
-        GetAttribute(typeof(Program));
+        
+        GetAssemblyMetadata();
+        //GetAttribute(typeof(Program));
+    }
+
+    public static void GetAssemblyMetadata()
+    {
+        Assembly assembly = Assembly.Load("System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e");
+        var pubTypesQuery = from type in assembly.GetTypes()
+                            where type.IsPublic
+                            from method in type.GetMethods()
+                            where method.ReturnType.IsArray == true
+                                || (method.ReturnType.GetInterface(
+                                    typeof(System.Collections.Generic.IEnumerable<>).FullName!) != null
+                                && method.ReturnType.FullName != "System.String")
+                            group method.ToString() by type.ToString();
+
+        foreach (var groupOfMethods in pubTypesQuery)
+        {
+            Console.WriteLine("Type: {0}", groupOfMethods.Key);
+            foreach (var method in groupOfMethods)
+            {
+                Console.WriteLine("  {0}", method);
+            }
+        }
     }
 
     public static void GetAttribute(Type t)
