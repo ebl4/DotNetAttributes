@@ -1,3 +1,4 @@
+[AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct)]
 public class DeveloperAttribute : Attribute
 {
     private string name;
