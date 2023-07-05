@@ -6,8 +6,9 @@ class Program
     public static void Main(string[] args)
     {
         
-        GetAssemblyMetadata();
+        //GetAssemblyMetadata();
         //GetAttribute(typeof(Program));
+        GetAttributes(typeof(Program));
     }
 
     public static void GetAssemblyMetadata()
@@ -28,6 +29,23 @@ class Program
             foreach (var method in groupOfMethods)
             {
                 Console.WriteLine("  {0}", method);
+            }
+        }
+    }
+
+    public static void GetAttributes(Type t)
+    {
+        var attributes = Attribute.GetCustomAttributes(t);
+
+        foreach(var attr in attributes)
+        {
+            if (attr == null)
+            {
+                System.Console.WriteLine("Atributo não encontrado.");
+            }
+            else
+            {
+                System.Console.WriteLine("O atributo é: {0}", attr);
             }
         }
     }
